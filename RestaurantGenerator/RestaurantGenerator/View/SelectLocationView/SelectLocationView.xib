@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectLocationView" customModule="RestaurantGenerator" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="91S-Qy-Ggw"/>
+                <outlet property="downtownButton" destination="YjR-JG-EHr" id="91d-Ah-UWs"/>
+                <outlet property="midtownButton" destination="9qr-wZ-RUg" id="gHv-7k-zXS"/>
+                <outlet property="noPreferenceButton" destination="nBB-ND-lPi" id="BUv-0E-lpa"/>
+                <outlet property="selectLocationLabel" destination="sCu-W8-eVW" id="Yxx-ec-T6T"/>
+                <outlet property="uptownButton" destination="5Gp-AP-oCq" id="zBx-Oc-9dM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-W8-eVW">
+                    <rect key="frame" x="28" y="25" width="194" height="37"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNE-r7-x1D">
+                    <rect key="frame" x="27" y="70" width="326" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gp-AP-oCq" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="27" y="104" width="149" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qr-wZ-RUg" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="27" y="182" width="149" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjR-JG-EHr" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="204" y="105" width="149" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-ND-lPi" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="204" y="182" width="149" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="TZO-1c-mTo"/>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="VaZ-Sw-oNr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sCu-W8-eVW" secondAttribute="bottom" constant="224" id="gp4-NH-32e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="48" y="-106"/>
+        </view>
+    </objects>
+</document>

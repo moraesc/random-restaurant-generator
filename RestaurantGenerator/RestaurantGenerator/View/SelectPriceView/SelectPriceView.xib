@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPriceView" customModule="RestaurantGenerator" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vz9-8J-lx3"/>
+                <outlet property="expensivePriceButton" destination="1g5-fL-foa" id="ybk-cb-DnG"/>
+                <outlet property="lowPriceButton" destination="MvE-UJ-aCe" id="9BU-op-cjB"/>
+                <outlet property="mediumPriceButton" destination="zbj-kR-Zif" id="ikn-0H-vxs"/>
+                <outlet property="selectPriceLabel" destination="sCu-W8-eVW" id="Xo1-q4-bdk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNE-r7-x1D">
+                    <rect key="frame" x="17" y="52" width="326" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="326" id="UAz-Oh-sss"/>
+                        <constraint firstAttribute="height" constant="1" id="US4-CO-N72"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvE-UJ-aCe" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="17" y="77" width="82" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="CxC-Gt-qrv"/>
+                        <constraint firstAttribute="width" constant="82" id="H0K-2Z-4SX"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your price range" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-W8-eVW">
+                    <rect key="frame" x="17" y="13" width="227" height="30.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-fL-foa" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="261" y="77" width="82" height="43"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-kR-Zif" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="139" y="77" width="82" height="43"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sCu-W8-eVW" secondAttribute="trailing" constant="136" id="0nO-J5-tlT"/>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="3Gh-gO-l9D"/>
+                <constraint firstItem="1g5-fL-foa" firstAttribute="centerY" secondItem="zbj-kR-Zif" secondAttribute="centerY" id="BCj-A2-b2e"/>
+                <constraint firstItem="zbj-kR-Zif" firstAttribute="height" secondItem="MvE-UJ-aCe" secondAttribute="height" id="Cw5-hx-J5l"/>
+                <constraint firstItem="zbj-kR-Zif" firstAttribute="leading" secondItem="MvE-UJ-aCe" secondAttribute="trailing" constant="40" id="HsT-nA-her"/>
+                <constraint firstItem="1g5-fL-foa" firstAttribute="leading" secondItem="zbj-kR-Zif" secondAttribute="trailing" constant="40" id="IrO-Y5-Zkh"/>
+                <constraint firstItem="1g5-fL-foa" firstAttribute="height" secondItem="zbj-kR-Zif" secondAttribute="height" id="Lfv-T3-cN6"/>
+                <constraint firstItem="1g5-fL-foa" firstAttribute="width" secondItem="zbj-kR-Zif" secondAttribute="width" id="Mj6-1i-C0F"/>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="PfJ-Ji-6KJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1g5-fL-foa" secondAttribute="trailing" constant="37" id="ZbE-yz-DmT"/>
+                <constraint firstItem="MvE-UJ-aCe" firstAttribute="top" secondItem="bNE-r7-x1D" secondAttribute="bottom" constant="24" id="bJV-1a-htv"/>
+                <constraint firstItem="MvE-UJ-aCe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="eOq-G0-KHP"/>
+                <constraint firstAttribute="trailing" secondItem="bNE-r7-x1D" secondAttribute="trailing" constant="37" id="eVt-S1-IKK"/>
+                <constraint firstItem="bNE-r7-x1D" firstAttribute="top" secondItem="sCu-W8-eVW" secondAttribute="bottom" constant="8" id="pwI-Jk-Lmg"/>
+                <constraint firstItem="bNE-r7-x1D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="tSc-Th-rIl"/>
+                <constraint firstItem="zbj-kR-Zif" firstAttribute="centerY" secondItem="MvE-UJ-aCe" secondAttribute="centerY" id="u3l-Rq-eHZ"/>
+                <constraint firstItem="zbj-kR-Zif" firstAttribute="width" secondItem="MvE-UJ-aCe" secondAttribute="width" id="v4d-la-WQq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47" y="-184.5"/>
+        </view>
+    </objects>
+</document>

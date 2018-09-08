@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectMealTypeView" customModule="RestaurantGenerator" customModuleProvider="target">
+            <connections>
+                <outlet property="americanButton" destination="5Gp-AP-oCq" id="qad-hW-GKl"/>
+                <outlet property="asianButton" destination="9qr-wZ-RUg" id="fWh-Vx-DFd"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0aw-h3-0ZS"/>
+                <outlet property="italianButton" destination="Oz3-iR-bje" id="96I-dg-b1z"/>
+                <outlet property="mexicanButton" destination="YjR-JG-EHr" id="7ST-em-peA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your cuisine" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-W8-eVW">
+                    <rect key="frame" x="17" y="13" width="199" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="199" id="1bp-8L-A8Q"/>
+                        <constraint firstAttribute="height" constant="30.5" id="HwY-g9-j8o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNE-r7-x1D">
+                    <rect key="frame" x="17" y="51.5" width="326" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="73z-4g-FQa"/>
+                        <constraint firstAttribute="width" constant="326" id="X7R-YS-0h8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gp-AP-oCq" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="17" y="72" width="149" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2TI-pd-bjX"/>
+                        <constraint firstAttribute="width" constant="149" id="7nQ-qt-cI6"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjR-JG-EHr" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="194" y="72" width="149" height="45"/>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qr-wZ-RUg" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="17" y="140" width="149" height="45"/>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz3-iR-bje" customClass="CustomButton" customModule="RestaurantGenerator" customModuleProvider="target">
+                    <rect key="frame" x="194" y="140" width="149" height="45"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bNE-r7-x1D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="1Pr-DJ-YlZ"/>
+                <constraint firstItem="5Gp-AP-oCq" firstAttribute="top" secondItem="bNE-r7-x1D" secondAttribute="bottom" constant="19.5" id="2yO-uq-yaB"/>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="4B6-vI-l35"/>
+                <constraint firstAttribute="trailing" secondItem="bNE-r7-x1D" secondAttribute="trailing" constant="37" id="7cX-GP-zxz"/>
+                <constraint firstItem="Oz3-iR-bje" firstAttribute="leading" secondItem="9qr-wZ-RUg" secondAttribute="trailing" constant="28" id="E69-UG-E1g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oz3-iR-bje" secondAttribute="trailing" constant="37" id="Iwp-Py-yfQ"/>
+                <constraint firstItem="YjR-JG-EHr" firstAttribute="width" secondItem="5Gp-AP-oCq" secondAttribute="width" id="Jfq-r6-fKr"/>
+                <constraint firstItem="YjR-JG-EHr" firstAttribute="leading" secondItem="5Gp-AP-oCq" secondAttribute="trailing" constant="28" id="LQu-rO-l9H"/>
+                <constraint firstItem="YjR-JG-EHr" firstAttribute="height" secondItem="5Gp-AP-oCq" secondAttribute="height" id="LvB-bv-AUT"/>
+                <constraint firstItem="9qr-wZ-RUg" firstAttribute="width" secondItem="Oz3-iR-bje" secondAttribute="width" id="OLc-JV-VfX"/>
+                <constraint firstItem="bNE-r7-x1D" firstAttribute="top" secondItem="sCu-W8-eVW" secondAttribute="bottom" constant="8" id="Q9t-Xb-Snn"/>
+                <constraint firstItem="YjR-JG-EHr" firstAttribute="top" secondItem="bNE-r7-x1D" secondAttribute="bottom" constant="19.5" id="Qnb-jH-sKu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YjR-JG-EHr" secondAttribute="trailing" constant="37" id="c7x-Yt-QVM"/>
+                <constraint firstItem="5Gp-AP-oCq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="cdD-1D-4W7"/>
+                <constraint firstItem="Oz3-iR-bje" firstAttribute="width" secondItem="YjR-JG-EHr" secondAttribute="width" id="dYV-bm-GM4"/>
+                <constraint firstItem="sCu-W8-eVW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="mCf-7d-f0u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oz3-iR-bje" secondAttribute="bottom" constant="11" id="qqR-Bh-GiU"/>
+                <constraint firstItem="Oz3-iR-bje" firstAttribute="height" secondItem="YjR-JG-EHr" secondAttribute="height" id="rHA-mq-Q4M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sCu-W8-eVW" secondAttribute="trailing" constant="164" id="rTJ-mA-nyW"/>
+                <constraint firstItem="9qr-wZ-RUg" firstAttribute="height" secondItem="Oz3-iR-bje" secondAttribute="height" id="si6-yl-Dlm"/>
+                <constraint firstItem="YjR-JG-EHr" firstAttribute="centerY" secondItem="5Gp-AP-oCq" secondAttribute="centerY" id="taH-ti-sdK"/>
+                <constraint firstItem="9qr-wZ-RUg" firstAttribute="centerY" secondItem="Oz3-iR-bje" secondAttribute="centerY" id="xVU-ON-Od1"/>
+                <constraint firstItem="Oz3-iR-bje" firstAttribute="top" secondItem="YjR-JG-EHr" secondAttribute="bottom" constant="23" id="xY4-3U-wh8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="48" y="-151"/>
+        </view>
+    </objects>
+</document>
