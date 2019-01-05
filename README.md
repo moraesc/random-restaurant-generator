@@ -4,7 +4,7 @@ Generates a random restaurant based on the user's selected location, cuisine and
 
 App Designs (Created in Sketch):
 
-![Alt Text](cmoraes/random-restaurant/generator/Designs1.png)
+![Alt Text](https://github.com/cmoraes1/random-restaurant-generator/blob/master/Designs1.png)
 
 
 
