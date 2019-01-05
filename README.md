@@ -6,5 +6,7 @@ App Designs (Created in Sketch):
 
 ![Alt Text](https://github.com/cmoraes1/random-restaurant-generator/blob/master/Designs1.png)
 
+![Alt Text](https://github.com/cmoraes1/random-restaurant-generator/blob/master/Designs2.png)
+
 
 
